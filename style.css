@@ -1,0 +1,217 @@
+* {
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+nav {
+    z-index: 0;
+}
+
+.nav-text-editor {
+    padding: 0 10px;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 14px;  
+    cursor: pointer;
+}
+
+.navbar-nav>.nav-item {
+    margin-left: 20px;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+}
+
+#logo {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-nav > .nav-item > a:hover {
+    background-color: #acabab;
+    color: black !important;
+}
+
+.navbar-nav > li > .dropdown-menu 
+{ 
+    background-color: #212529; 
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.navbar-nav > li > .dropdown-menu > a:hover{
+    background: #fff;
+    color: #212529 !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%212529' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%212529' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+#main-content, #contest, body {
+    background: #f6fff6c9;
+}
+
+#contest {
+    margin-top: 20px;
+    padding-bottom: 0px;
+}
+
+#description {
+    margin-top: 50px;
+    max-width: 1360px;
+    border-bottom: 2px solid black;
+}
+
+.headline, .highlight {
+    font-size: 46px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.headline {
+    padding: 100px 20px 0px 20px;
+    color: black;
+}
+
+.highlight {
+    color: #189c46;
+}
+
+.para {
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+}
+
+.des-img {
+    width: 100%;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+
+.sport-title {
+    padding-left: 1rem;
+    border-left: 5px solid #189c46;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.basketball-title {
+    border-left: 5px solid #ffc400;
+}
+
+.tenis-title {
+    border-left: 5px solid #0051ff;
+}
+
+.football-content {
+    margin-top: 10px;
+}
+
+.item {
+    background: #464c50;
+    box-shadow: 0 0 40px 40px rgba(255,255,255,.075) inset;
+    color: white;
+    text-align: center;
+    border-radius: 0.75rem;
+    margin: 5px;
+}
+
+.item-header {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.team-logo-img {
+    width: 50%;
+}
+
+.team-name > h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.league-name {
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 0 0 8px 8px;
+    display: inline-block;
+    line-height: 24px;
+    padding: 0 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.item-bottom {
+    border-top: 1px dotted black;
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+}
+
+.team-name {
+    padding: 10px;
+}
+
+.status {
+    display: block;
+    text-align: center;
+    background-color: rgba(255, 55, 55, 0.75);
+    border-radius: 8px 8px 8px 8px;
+    line-height: 24px;
+    padding: 0 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+    float: right;
+}
+
+.result {
+    margin-top: 0.75rem;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sports {
+    margin-bottom: 50px;
+}
+
+#foot-content {
+    z-index: 5;  
+}
+
+.contact {
+    line-height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.contact-title {
+    color: #ffffff;
+    padding-right: 10px;
+}
+
+.link-contact {
+    font-size: 20px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.contact-des {
+    color: #ffffff;
+    text-align: end;
+    float: right;
+}
