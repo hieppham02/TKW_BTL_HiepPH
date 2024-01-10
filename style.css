@@ -1,12 +1,11 @@
 * {
     font-family: Arial;
     box-sizing: border-box;
+    text-decoration: none !important;
 }
-
 nav {
     z-index: 0;
 }
-
 .nav-text-editor {
     padding: 0 10px;
     line-height: 40px;
@@ -14,25 +13,21 @@ nav {
     font-size: 14px;  
     cursor: pointer;
 }
-
 .navbar-nav>.nav-item {
     margin-left: 20px;
-    width: 120px;
+    width: 160px;
     display: inline-block;
     text-align: center;
     
 }
-
 #logo {
     height: 40px;
     width: auto;
 }
-
 .navbar-nav > .nav-item > a:hover {
     background-color: #acabab;
     color: black !important;
 }
-
 .navbar-nav > li > .dropdown-menu 
 { 
     background-color: #212529; 
@@ -40,39 +35,38 @@ nav {
     font-weight: 600;
     font-size: 14px;
 }
-
 .dropdown-item {
     color: white;
 }
-
 .navbar-nav > li > .dropdown-menu > a:hover{
     background: #fff;
     color: #212529 !important;
 }
-
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%212529' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
-   
+
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%212529' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
-
-#main-content, #contest, body {
-    background: #f6fff6c9;
+body {
+    background: #eaebed;
 }
-
+#main-content, #contest {
+    background-color: #ffffff;
+}
+#main-content {
+    padding-bottom: 50px;
+}
 #contest {
     margin-top: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
 }
-
 #description {
     margin-top: 50px;
     max-width: 1360px;
     border-bottom: 2px solid black;
 }
-
 .headline, .highlight {
     font-size: 46px;
     font-family: Roboto;
@@ -80,27 +74,22 @@ nav {
     font-weight: 700;
     margin-bottom: 1.2rem;
 }
-
 .headline {
     padding: 100px 20px 0px 20px;
     color: black;
 }
-
 .highlight {
     color: #189c46;
 }
-
 .para {
     color: rgb(0, 0, 0);
     padding-left: 20px;
 }
-
 .des-img {
     width: 100%;
     margin-top: 110px;
     margin-bottom: 50px;
 }
-
 .sport-title {
     padding-left: 1rem;
     border-left: 5px solid #189c46;
@@ -109,19 +98,15 @@ nav {
     font-family: Roboto;
     font-weight: bold;
 }
-
 .basketball-title {
     border-left: 5px solid #ffc400;
 }
-
 .tenis-title {
     border-left: 5px solid #0051ff;
 }
-
 .football-content {
     margin-top: 10px;
 }
-
 .item {
     background: #464c50;
     box-shadow: 0 0 40px 40px rgba(255, 255, 255, 0.3) inset;
@@ -130,22 +115,18 @@ nav {
     border-radius: 0.75rem;
     margin: 5px;
 }
-
 .item-header {
     display: block;
     text-align: center;
     text-transform: uppercase;
 }
-
 .team-logo-img {
     width: 50%;
 }
-
 .team-name > h3 {
     font-size: 14px;
     font-weight: 500;
 }
-
 .league-name {
     display: block;
     text-align: center;
@@ -157,17 +138,14 @@ nav {
     font-size: 11px;
     text-transform: uppercase;
 }
-
 .item-bottom {
     border-top: 1px dotted rgb(255, 255, 255);
     border-radius: 0 0 8px 8px;
     padding: 10px;
 }
-
 .team-name {
     padding: 10px;
 }
-
 .status {
     display: block;
     text-align: center;
@@ -179,40 +157,119 @@ nav {
     text-transform: uppercase;
     float: right;
 }
-
 .result {
     margin-top: 0.75rem;
     font-weight: bold;
     font-size: 30px;
 }
-
 .sports {
     margin-bottom: 50px;
 }
-
 #foot-content {
     z-index: 5;  
 }
-
 .contact {
     line-height: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
 .contact-title {
     color: #ffffff;
     padding-right: 10px;
 }
-
 .link-contact {
     font-size: 20px;
     padding: 0 10px;
     text-decoration: none;
 }
-
 .contact-des {
     color: #ffffff;
     text-align: end;
     float: right;
+}
+.slidebar {
+    width: 50%;
+    padding-top: 10px;
+}
+.carousel-caption {
+    color: black;
+}
+.dropdown-menu {
+    margin-top: -0.15rem !important;
+    background: #363636b4 !important;
+}
+.notify {
+    padding-top: 100px;
+    
+}
+.frame>h4 {
+    padding: 10px;
+    font-size: Roboto;  
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.frame {
+    border-left: 5px solid #189c46;     
+}
+.league-name-large {
+    background-color: rgba(0, 0, 0, 0.486);
+    border-top-right-radius: 1.5rem ;
+    border-top-left-radius: 1.5rem ;
+    margin-bottom: 5px;
+}
+.btn-league {
+    padding: 2px;
+    width: 100px;
+    border: none;
+    border-radius: 0.75rem;
+    margin: 20px 5px;
+    background-color: #525151;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn-league:hover {
+    color: #00cc47;
+}
+table {
+    font-size: 14px;
+}
+thead {
+    text-align: center;
+}
+#th-clb {
+    text-align: start;
+}
+.id {
+    margin: 0px 10px;
+}
+.point-score {
+    text-align: center;
+    vertical-align: middle;
+}
+#UEFA, #NBA, #UEFA-player, #NBA-player {
+    display: none;
+}
+td {
+    line-height: 50px;
+    padding: 0;
+}
+.td-01 {
+    width: 20rem;
+}
+.last5match {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    background: #52af2f;
+    text-align: center;
+    line-height: 20px;
+}
+.lossmatch{
+    background: #e74c5b;
+}
+.table-left {
+    width: 800px !important;
 }
