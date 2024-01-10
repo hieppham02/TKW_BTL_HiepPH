@@ -212,7 +212,7 @@ body {
     border-left: 5px solid #189c46;     
 }
 .league-name-large {
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: #189c46;
     border-top-right-radius: 1.5rem ;
     border-top-left-radius: 1.5rem ;
     margin-bottom: 5px;
@@ -223,8 +223,8 @@ body {
     border: none;
     border-radius: 0.75rem;
     margin: 20px 5px;
-    background-color: #525151;
-    color: white;
+    background-color: #ffffff;
+    color: black;
     font-size: 14px;
     font-weight: bold;
 }
@@ -250,12 +250,18 @@ thead {
 #UEFA, #NBA, #UEFA-player, #NBA-player {
     display: none;
 }
+#EPL, #UEFA, #NBA, #EPL-player, #UEFA-player, #NBA-player {
+    text-align: center;
+}
 td {
     line-height: 50px;
     padding: 0;
 }
-.td-01 {
+.td-01, .td-01-02 {
     width: 20rem;
+}
+.td-01 {
+    text-align: start;
 }
 .last5match {
     display: inline-block;
@@ -272,4 +278,59 @@ td {
 }
 .table-left {
     width: 800px !important;
+}
+.head-match {
+    height: 60px;
+    background-color: #189c46;
+    padding: 10px;
+}
+.head-match-text {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+.item-match-main {
+    height: 100px;
+    background-color: #ececec;
+}
+.item-match-col {
+    font-size: 14px;
+    vertical-align: middle;
+}
+.item-match-btn {
+    border: none;
+    color: white;
+    background-color: #189c46;
+    border-radius: 1.75rem;
+    margin-top: 2rem;
+    padding: 0.5rem 0.5rem;
+    width: 75px;
+}
+.item-match {
+    border-bottom: 0.5px solid #ffffff;
+}
+.item-match-this-sm{
+    margin-top: 0.55rem;   
+}
+.match-time {
+    text-align: center;
+}
+.item-match-result {
+    padding: 10px 0px;
+}
+.item-match-this-xs {
+    margin-top: 1.5rem;
+}
+.item-match-general {
+    color: black;
+}
+.item-match-result-l {
+    padding: 5px 0px;
+}
+.item-match-link:hover .item-match-main {
+    background-color: #bdbdbd;
+}
+.match-content {
+    margin-bottom: 20px;
 }

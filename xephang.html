@@ -30,7 +30,7 @@
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button"
                                 data-bs-toggle="dropdown">Lịch thi đấu</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Bóng đá</a></li>
+                                <li><a class="dropdown-item" href="./lichdau-bongda.html">Bóng đá</a></li>
                                 <li><a class="dropdown-item" href="#">Bóng rổ</a></li>
                                 <li><a class="dropdown-item" href="#">Bóng chuyển</a></li>
                                 <li><a class="dropdown-item" href="#">Đua xe F1</a></li>
@@ -62,15 +62,20 @@
             </div>
         </div>
         <div class="container league-name-large">
-            <button id="btn-l1" class="btn-league" onclick="OpenLeague('EPL'), ClickChangeColor_1(), OpenPlayer('EPL-player')">EPL</button>
-            <button id="btn-l2" class="btn-league" onclick="OpenLeague('UEFA'), ClickChangeColor_2(), OpenPlayer('UEFA-player')">UEFA</button>
-            <button id="btn-l3" class="btn-league" onclick="OpenLeague('NBA'), ClickChangeColor_3(), OpenPlayer('NBA-player')">NBA</button>
+            <button id="btn-l1" class="btn-league"
+                onclick="OpenLeague('EPL'), ClickChangeColor_1(), OpenPlayer('EPL-player')">EPL</button>
+            <button id="btn-l2" class="btn-league"
+                onclick="OpenLeague('UEFA'), ClickChangeColor_2(), OpenPlayer('UEFA-player')">UEFA</button>
+            <button id="btn-l3" class="btn-league"
+                onclick="OpenLeague('NBA'), ClickChangeColor_3(), OpenPlayer('NBA-player')">NBA</button>
         </div>
         <div class="row">
             <div class="col col-sm-8">
-                <table id="EPL" class="table table-light container wrap-table-1 league-tab table-hover table-sm rounded-2 overflow-hidden">
+                <table id="EPL"
+                    class="table table-light container wrap-table-1 league-tab table-hover table-sm rounded-2 overflow-hidden">
                     <thead>
                         <tr>
+                            <th>#</th>
                             <th id="th-clb">Câu lạc bộ</th>
                             <th>Thắng</th>
                             <th>Hòa</th>
@@ -83,8 +88,8 @@
                     </thead>
                     <tbody>
                         <tr class="team-rank">
+                            <td><span class="id">1</span></td>
                             <td class="td-01">
-                                <span class="id">1</span>
                                 <span><img
                                         src="https://img0.aiscore.com/football/team/0a11e714b8ccb1e287520857bd6cf01c.png!w40"
                                         alt=""></span>
@@ -105,8 +110,8 @@
                             </td>
                         </tr>
                         <tr class="team-rank">
+                            <td><span class="id">1</span></td>
                             <td class="td-01">
-                                <span class="id">2</span>
                                 <span><img
                                         src="https://img0.aiscore.com/football/team/0a11e714b8ccb1e287520857bd6cf01c.png!w40"
                                         alt=""></span>
@@ -127,8 +132,9 @@
                             </td>
                         </tr>
                         <tr class="team-rank">
+                            <td><span class="id">1</span></td>
                             <td class="td-01">
-                                <span class="id">3</span>
+
                                 <span><img
                                         src="https://img0.aiscore.com/football/team/0a11e714b8ccb1e287520857bd6cf01c.png!w40"
                                         alt=""></span>
@@ -150,9 +156,11 @@
                         </tr>
                     </tbody>
                 </table>
-                <table id="UEFA" class="table table-light container wrap-table-1 league-tab table-hover table-sm rounded-2 overflow-hidden">
+                <table id="UEFA"
+                    class="table table-light container wrap-table-1 league-tab table-hover table-sm rounded-2 overflow-hidden">
                     <thead>
                         <tr>
+                            <th>#</th>
                             <th id="th-clb">Câu lạc bộ</th>
                             <th>Thắng</th>
                             <th>Hòa</th>
@@ -165,8 +173,8 @@
                     </thead>
                     <tbody>
                         <tr class="team-rank">
+                            <td><span class="id">1</span></td>
                             <td class="td-01">
-                                <span class="id">1</span>
                                 <span><img
                                         src="https://img0.aiscore.com/football/team/47ba2fe5caa3770cfa2e99dc4b7e72cd.png!w40"
                                         alt=""></span>
@@ -187,8 +195,8 @@
                             </td>
                         </tr>
                         <tr class="team-rank">
+                            <td><span class="id">1</span></td>
                             <td class="td-01">
-                                <span class="id">2</span>
                                 <span><img
                                         src="https://img0.aiscore.com/football/team/47ba2fe5caa3770cfa2e99dc4b7e72cd.png!w40"
                                         alt=""></span>
@@ -209,8 +217,8 @@
                             </td>
                         </tr>
                         <tr class="team-rank">
+                            <td><span class="id">1</span></td>
                             <td class="td-01">
-                                <span class="id">3</span>
                                 <span><img
                                         src="https://img0.aiscore.com/football/team/47ba2fe5caa3770cfa2e99dc4b7e72cd.png!w40"
                                         alt=""></span>
@@ -232,9 +240,11 @@
                         </tr>
                     </tbody>
                 </table>
-                <table id="NBA" class="table table-light container wrap-table-1 league-tab table-hover table-sm rounded-2 overflow-hidden">
+                <table id="NBA"
+                    class="table table-light container wrap-table-1 league-tab table-hover table-sm rounded-2 overflow-hidden">
                     <thead>
                         <tr>
+                            <th>#</th>
                             <th id="th-clb">Câu lạc bộ</th>
                             <th>Thắng</th>
                             <th>Hòa</th>
@@ -247,8 +257,8 @@
                     </thead>
                     <tbody>
                         <tr class="team-rank">
+                            <td><span class="id">1</span></td>
                             <td class="td-01">
-                                <span class="id">1</span>
                                 <span><img
                                         src="https://img0.aiscore.com/basketball/team/172138a954c51bb257ac1ebaa52f01a1.png!w40"
                                         alt=""></span>
@@ -269,8 +279,8 @@
                             </td>
                         </tr>
                         <tr class="team-rank">
+                            <td><span class="id">1</span></td>
                             <td class="td-01">
-                                <span class="id">2</span>
                                 <span><img
                                         src="https://img0.aiscore.com/basketball/team/172138a954c51bb257ac1ebaa52f01a1.png!w40"
                                         alt=""></span>
@@ -291,8 +301,8 @@
                             </td>
                         </tr>
                         <tr class="team-rank">
+                            <td><span class="id">1</span></td>
                             <td class="td-01">
-                                <span class="id">3</span>
                                 <span><img
                                         src="https://img0.aiscore.com/basketball/team/172138a954c51bb257ac1ebaa52f01a1.png!w40"
                                         alt=""></span>
@@ -318,38 +328,45 @@
             </div>
 
             <div class="col col-sm-4">
-                <table id="EPL-player" class="table table-light container wrap-table-1 league-player table-hover table-sm rounded-2 overflow-hidden">
+                <table id="EPL-player"
+                    class="table table-light container wrap-table-1 league-player table-hover table-sm rounded-2 overflow-hidden">
                     <thead>
-                        <tr>                         
+                        <tr>
                             <th>#</th>
                             <th>Cầu thủ</th>
                             <th>Trận đấu</th>
-                            <th>Bàn thắng</th>                           
-                        </tr>                       
+                            <th>Bàn thắng</th>
+                        </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="td-01-02">
                             <td>1</td>
                             <td>
-                                <span><img src="https://img0.aiscore.com/football/player/1589d4760e5d45ca1de8789231209776.png!w40" alt=""></span>
+                                <span><img
+                                        src="https://img0.aiscore.com/football/player/1589d4760e5d45ca1de8789231209776.png!w40"
+                                        alt=""></span>
                                 <a href="">Harry Kane</a>
                             </td>
                             <td>15</td>
                             <td>21</td>
                         </tr>
-                        <tr>
+                        <tr class="td-01-02">
                             <td>2</td>
                             <td>
-                                <span><img src="https://img0.aiscore.com/football/player/1589d4760e5d45ca1de8789231209776.png!w40" alt=""></span>
+                                <span><img
+                                        src="https://img0.aiscore.com/football/player/1589d4760e5d45ca1de8789231209776.png!w40"
+                                        alt=""></span>
                                 <a href="">Harry Kane</a>
                             </td>
                             <td>15</td>
                             <td>21</td>
                         </tr>
-                        <tr>
+                        <tr class="td-01-02">
                             <td>3</td>
                             <td>
-                                <span><img src="https://img0.aiscore.com/football/player/1589d4760e5d45ca1de8789231209776.png!w40" alt=""></span>
+                                <span><img
+                                        src="https://img0.aiscore.com/football/player/1589d4760e5d45ca1de8789231209776.png!w40"
+                                        alt=""></span>
                                 <a href="">Harry Kane</a>
                             </td>
                             <td>15</td>
@@ -357,38 +374,45 @@
                         </tr>
                     </tbody>
                 </table>
-                <table id="UEFA-player" class="table table-light container wrap-table-1 league-player table-hover table-sm rounded-2 overflow-hidden">
+                <table id="UEFA-player"
+                    class="table table-light container wrap-table-1 league-player table-hover table-sm rounded-2 overflow-hidden">
                     <thead>
-                        <tr>                         
+                        <tr>
                             <th>#</th>
                             <th>Cầu thủ</th>
                             <th>Trận đấu</th>
-                            <th>Bàn thắng</th>                           
-                        </tr>                       
+                            <th>Bàn thắng</th>
+                        </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="td-01-02">
                             <td>1</td>
                             <td>
-                                <span><img src="https://img0.aiscore.com/football/player/51b72775cb5201281213c806ec0a2850.png!w40" alt=""></span>
+                                <span><img
+                                        src="https://img0.aiscore.com/football/player/51b72775cb5201281213c806ec0a2850.png!w40"
+                                        alt=""></span>
                                 <a href="">Harry Kane</a>
                             </td>
                             <td>15</td>
                             <td>21</td>
                         </tr>
-                        <tr>
+                        <tr class="td-01-02">
                             <td>2</td>
                             <td>
-                                <span><img src="https://img0.aiscore.com/football/player/51b72775cb5201281213c806ec0a2850.png!w40" alt=""></span>
+                                <span><img
+                                        src="https://img0.aiscore.com/football/player/51b72775cb5201281213c806ec0a2850.png!w40"
+                                        alt=""></span>
                                 <a href="">Harry Kane</a>
                             </td>
                             <td>15</td>
                             <td>21</td>
                         </tr>
-                        <tr>
+                        <tr class="td-01-02">
                             <td>3</td>
                             <td>
-                                <span><img src="https://img0.aiscore.com/football/player/51b72775cb5201281213c806ec0a2850.png!w40" alt=""></span>
+                                <span><img
+                                        src="https://img0.aiscore.com/football/player/51b72775cb5201281213c806ec0a2850.png!w40"
+                                        alt=""></span>
                                 <a href="">Harry Kane</a>
                             </td>
                             <td>15</td>
@@ -396,38 +420,45 @@
                         </tr>
                     </tbody>
                 </table>
-                <table id="NBA-player" class="table table-light container wrap-table-1 league-player table-hover table-sm rounded-2 overflow-hidden">
+                <table id="NBA-player"
+                    class="table table-light container wrap-table-1 league-player table-hover table-sm rounded-2 overflow-hidden">
                     <thead>
-                        <tr>                         
+                        <tr>
                             <th>#</th>
                             <th>Cầu thủ</th>
                             <th>Trận đấu</th>
-                            <th>Bàn thắng</th>                           
-                        </tr>                      
+                            <th>Bàn thắng</th>
+                        </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="td-01-02">
                             <td>1</td>
                             <td>
-                                <span><img src="https://img0.aiscore.com/basketball/player/497396cf56809bd1a667f9692d3fe407.png!w50" alt=""></span>
+                                <span><img
+                                        src="https://img0.aiscore.com/basketball/player/497396cf56809bd1a667f9692d3fe407.png!w50"
+                                        alt=""></span>
                                 <a href="">Harry Kane</a>
                             </td>
                             <td>15</td>
                             <td>21</td>
                         </tr>
-                        <tr>
+                        <tr class="td-01-02">
                             <td>2</td>
                             <td>
-                                <span><img src="https://img0.aiscore.com/basketball/player/497396cf56809bd1a667f9692d3fe407.png!w50" alt=""></span>
+                                <span><img
+                                        src="https://img0.aiscore.com/basketball/player/497396cf56809bd1a667f9692d3fe407.png!w50"
+                                        alt=""></span>
                                 <a href="">Harry Kane</a>
                             </td>
                             <td>15</td>
                             <td>21</td>
                         </tr>
-                        <tr>
+                        <tr class="td-01-02">
                             <td>3</td>
                             <td>
-                                <span><img src="https://img0.aiscore.com/basketball/player/497396cf56809bd1a667f9692d3fe407.png!w50" alt=""></span>
+                                <span><img
+                                        src="https://img0.aiscore.com/basketball/player/497396cf56809bd1a667f9692d3fe407.png!w50"
+                                        alt=""></span>
                                 <a href="">Harry Kane</a>
                             </td>
                             <td>15</td>

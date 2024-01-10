@@ -16,16 +16,16 @@ function OpenPlayer(leaguePlayer) {
   }
 function ClickChangeColor_1() {
   document.getElementById("btn-l1").style.color = "#00cc47";
-  document.getElementById("btn-l2").style.color = "white";
-  document.getElementById("btn-l3").style.color = "white";
+  document.getElementById("btn-l2").style.color = "black";
+  document.getElementById("btn-l3").style.color = "black";
 }
 function ClickChangeColor_2() {
-  document.getElementById("btn-l1").style.color = "white";
+  document.getElementById("btn-l1").style.color = "black";
   document.getElementById("btn-l2").style.color = "#00cc47";
-  document.getElementById("btn-l3").style.color = "white";
+  document.getElementById("btn-l3").style.color = "black";
 }
 function ClickChangeColor_3() {
-  document.getElementById("btn-l1").style.color = "white";
-  document.getElementById("btn-l2").style.color = "white";
+  document.getElementById("btn-l1").style.color = "black";
+  document.getElementById("btn-l2").style.color = "black";
   document.getElementById("btn-l3").style.color = "#00cc47";
 }
