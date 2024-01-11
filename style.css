@@ -62,7 +62,7 @@ body {
     margin-top: 20px;
     padding-bottom: 20px;
 }
-#description {
+.description {
     margin-top: 50px;
     max-width: 1360px;
     border-bottom: 2px solid black;
@@ -205,7 +205,7 @@ body {
     background: #363636b4 !important;
 }
 .notify {
-    padding-top: 25px;
+    padding-top: 1rem;
     
 }
 .frame>h4 {
@@ -213,6 +213,7 @@ body {
     font-family: Roboto;  
     font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
 }
 .frame-football>h4 {
     border-left: 5px solid #189c46;     
@@ -225,6 +226,13 @@ body {
     border-top-right-radius: 1.5rem ;
     border-top-left-radius: 1.5rem ;
     margin-bottom: 5px;
+}
+.foot-table {
+    height: 4rem;
+    background-color: #189c46;
+    border-bottom-right-radius: 1.5rem ;
+    border-bottom-left-radius: 1.5rem ;
+    margin-top: -0.75rem;
 }
 .btn-league {
     padding: 2px;
@@ -255,8 +263,8 @@ thead {
 .point-score {
     text-align: center;
     vertical-align: middle;
-}
-#UEFA, #NBA, #UEFA-player, #NBA-player {
+}       
+#UEFA, #NBA, #UEFA-player, #NBA-player, #UEFA-des, #NBA-des {
     display: none;
 }
 #EPL, #UEFA, #NBA, #EPL-player, #UEFA-player, #NBA-player {
@@ -367,4 +375,21 @@ td {
 .fidel-text {
     text-align: center;
     margin-top: 10px;
+}
+.description-img-football {
+    margin-top: 3rem;
+    padding-top: 0.5rem;
+}
+.img-des 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px
+}
+.ticket-none {
+    text-decoration: line-through !important;
+}
+.epl-img-des {
+    width: 100%;
 }
