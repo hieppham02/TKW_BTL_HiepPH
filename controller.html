@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <title>Admin Controller</title>
+</head>
+
+<body>
+    <button id="insert-btn">ADD</button>
+    <button id="delete-btn">DELETE</button>
+    <span>Index cần xóa</span>
+    <input id="inp-team-name" type="text" placeholder="team name">
+    <input id="inp-team-logo" type="text" placeholder="team logo">
+    <div id="insert">
+        <script>
+            document.getElementById('insert-btn').addEventListener('click', function () {
+                var name = document.getElementById('inp-team-name').value;
+                var teamName = name;
+                var teamLogo = document.getElementById('inp-team-logo').value;
+                fullHtml = `
+<div class="item-match">
+<a class="item-match-link" href="">
+    <div class="item-match-main">
+        <div class="row item-match-general">
+            <div class="col col-2 item-match-col">
+                <div class="item-match-this-xs match-time">
+                    <div>03:00</div>
+                    <div>11/02/2024</div>
+                </div>
+            </div>
+            <div class="col item-match-col">
+                <div class="item-match-this">
+                    <span>`+ name + `</span>
+                    <span>
+                        <img src="`+ teamLogo + `"
+                            alt="">
+                    </span>
+                    <span class="fb-field">
+                        <img class="fb-field-img" src="./image/fb-field.png" alt="">
+                    </span>
+                    <span>
+                        <img src="`+ teamLogo + `"
+                            alt="">
+                    </span>
+                    <span>`+ name + `</span>
+                </div>
+                <div class="fidel-text">
+                    SVĐ Old Trafford
+                </div>
+            </div>
+            <div class="col item-match-col col-2">
+                <button class="item-match-btn item-match-btn-football ticket-none"><span>Mua vé</span></button>
+            </div>
+        </div>
+    </div>
+</a>
+</div>
+    `;
+                var existingHtmlArray = JSON.parse(localStorage.getItem('teamObjectArray')) || [];
+                var currentIndex = parseInt(localStorage.getItem('index')) || 0;
+                existingHtmlArray.push({
+                    name: name,
+                    logo: teamLogo,
+                    html: fullHtml
+                });
+                localStorage.setItem('teamObjectArray', JSON.stringify(existingHtmlArray));
+                showHtmlArray();
+            });
+
+            document.getElementById('delete-btn').addEventListener('click', function () {
+                var existingHtmlArray = JSON.parse(localStorage.getItem('teamObjectArray')) || [];
+
+                // Giá trị của key mà bạn muốn dựa vào để xác định đối tượng cần xóa
+                var valueToRemove = document.getElementById('inp-team-name').value;
+
+                // Tìm chỉ số của đối tượng có giá trị cần xóa trong mảng
+                var indexToRemove = existingHtmlArray.findIndex(function (element) {
+                    return element.name === valueToRemove; // Thay thế 'yourKey' bằng key thực tế
+                });
+
+                // Xóa đối tượng từ mảng sử dụng splice
+                if (indexToRemove !== -1) {
+                    existingHtmlArray.splice(indexToRemove, 1);
+
+                    // Lưu trữ mảng mới vào localStorage
+                    localStorage.setItem('teamObjectArray', JSON.stringify(existingHtmlArray));
+
+                    // Hiển thị lại mảng hoặc làm cái gì đó khác nếu cần
+                    showHtmlArray();
+                }
+            });
+
+        </script>
+    </div>
+</body>
+
+</html>

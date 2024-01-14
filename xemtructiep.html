@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./image/slide-img-2.png" type="image/x-icon">
     <script src="./script.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <title>SportBookTV</title>
 </head>
 
@@ -55,11 +57,385 @@
         </nav>
     </header>
 
-    <section id="main-content" class="container">
-        <div class="row">
-            
-        </div>
-    </section>
+    <main id="main-content" class="container">
+        <section class="head-section">
+            <marquee direction="right">Các bạn đang theo dõi trực tiếp trận đấu tại SportBookTV</marquee>
+            <div class="container d-flex justify-content-center macth-now">
+                <div class="team-live">
+                    <span>Aletico Marid</span>
+                </div>
+                <div class="img-logo-live">
+                    <img src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w50" alt="">
+                </div>
+                <div class="result-live">
+                    <span>1</span>
+                    <span> - </span>
+                    <span>0</span>
+                </div>
+                <div class="img-logo-live">
+                    <img src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w50" alt="">
+                </div>
+                <div class="team-live">
+                    <span>Aletico Marid</span>
+                </div>
+            </div>
+        </section>
+        <section class="container video-player">
+            <div class="row">
+                <div class="col-8">
+                    <div class="video-frame">
+                        <div>
+                            <h6>
+                                Trực tiếp: Trận đấu giữa Aletico Marid và Real Marid vòng 18 siêu cúp hoàng gia tây ban
+                                nha
+                            </h6>
+                        </div>
+                        <iframe style="border-radius: 10px;" width="800" height="600" src="./image/video1.mp4" title="r"
+                            frameborder="1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-4 comment-frame">
+                    <h6>
+                        Các trận đấu khác
+                    </h6>
+                    <div class="comment-live">
+                        <table class="table table-borderless macth-now-table">
+                            <tr class="match-now-row">
+                                <td class="team-match">
+                                    <span class="team-match-logo">Real Marid</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="macth-now-result">1 - 0</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="team-match-logo">Dortmund</span>
+                                </td>
+                                <td class="time-match">
+                                    <span class="team-match-logo">89:02</span>
+                                </td>
+                                <td class="play-match">
+                                    <button class="btn-watch-now">
+                                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #63E6BE;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="match-now-row">
+                                <td class="team-match">
+                                    <span class="team-match-logo">Real Marid</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="macth-now-result">1 - 0</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="team-match-logo">Dortmund</span>
+                                </td>
+                                <td class="time-match">
+                                    <span class="team-match-logo">89:02</span>
+                                </td>
+                                <td class="play-match">
+                                    <button class="btn-watch-now">
+                                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #63E6BE;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="match-now-row">
+                                <td class="team-match">
+                                    <span class="team-match-logo">Real Marid</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="macth-now-result">1 - 0</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="team-match-logo">Dortmund</span>
+                                </td>
+                                <td class="time-match">
+                                    <span class="team-match-logo">03:00 14/03</span>
+                                </td>
+                                <td class="play-match">
+                                    <button class="btn-watch-now">
+                                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #63E6BE;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="match-now-row">
+                                <td class="team-match">
+                                    <span class="team-match-logo">Real Marid</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="macth-now-result">1 - 0</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="team-match-logo">Dortmund</span>
+                                </td>
+                                <td class="time-match">
+                                    <span class="team-match-logo">89:02</span>
+                                </td>
+                                <td class="play-match">
+                                    <button class="btn-watch-now">
+                                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #63E6BE;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="match-now-row">
+                                <td class="team-match">
+                                    <span class="team-match-logo">Real Marid</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="macth-now-result">1 - 0</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="team-match-logo">Dortmund</span>
+                                </td>
+                                <td class="time-match">
+                                    <span class="team-match-logo">89:02</span>
+                                </td>
+                                <td class="play-match">
+                                    <button class="btn-watch-now">
+                                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #63E6BE;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="match-now-row">
+                                <td class="team-match">
+                                    <span class="team-match-logo">Real Marid</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="macth-now-result">1 - 0</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="team-match-logo">Dortmund</span>
+                                </td>
+                                <td class="time-match">
+                                    <span class="team-match-logo">03:00 14/03</span>
+                                </td>
+                                <td class="play-match">
+                                    <button class="btn-watch-now">
+                                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #63E6BE;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="match-now-row">
+                                <td class="team-match">
+                                    <span class="team-match-logo">Real Marid</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="macth-now-result">1 - 0</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="team-match-logo">Dortmund</span>
+                                </td>
+                                <td class="time-match">
+                                    <span class="team-match-logo">89:02</span>
+                                </td>
+                                <td class="play-match">
+                                    <button class="btn-watch-now">
+                                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #63E6BE;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="match-now-row">
+                                <td class="team-match">
+                                    <span class="team-match-logo">Real Marid</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="macth-now-result">1 - 0</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="team-match-logo">Dortmund</span>
+                                </td>
+                                <td class="time-match">
+                                    <span class="team-match-logo">03:00 14/03</span>
+                                </td>
+                                <td class="play-match">
+                                    <button class="btn-watch-now">
+                                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #63E6BE;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="match-now-row">
+                                <td class="team-match">
+                                    <span class="team-match-logo">Real Marid</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="macth-now-result">1 - 0</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="team-match-logo">Dortmund</span>
+                                </td>
+                                <td class="time-match">
+                                    <span class="team-match-logo">89:02</span>
+                                </td>
+                                <td class="play-match">
+                                    <button class="btn-watch-now">
+                                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #63E6BE;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="match-now-row">
+                                <td class="team-match">
+                                    <span class="team-match-logo">Real Marid</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="macth-now-result">1 - 0</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="team-match-logo">Dortmund</span>
+                                </td>
+                                <td class="time-match">
+                                    <span class="team-match-logo">89:02</span>
+                                </td>
+                                <td class="play-match">
+                                    <button class="btn-watch-now">
+                                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #63E6BE;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="match-now-row">
+                                <td class="team-match">
+                                    <span class="team-match-logo">Real Marid</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="macth-now-result">1 - 0</span>
+                                    <img class="matching-logo"
+                                        src="https://img0.aiscore.com/football/team/15f730f481d1ae7c75c1d28ee2862adc.png!w30"
+                                        alt="">
+                                    <span class="team-match-logo">Dortmund</span>
+                                </td>
+                                <td class="time-match">
+                                    <span class="team-match-logo">89:02</span>
+                                </td>
+                                <td class="play-match">
+                                    <button class="btn-watch-now">
+                                        <i class="fa-solid fa-circle-play fa-2xl" style="color: #63E6BE;"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container comment-danhgia">
+            <div class="row">
+                <div class="col-6">
+                    <div class="comment-box d-flex">
+                        <div class="comment-logo">
+                            <img class="rounded-circle shadow-1-strong me-3"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp" alt="avatar"
+                                width="60" height="60" />
+                        </div>
+                        <div class="comment-now">
+                            <textarea name="" id="comment-viewer" cols="65" rows="5"
+                                placeholder="Bạn có cảm nhận gì về trận đấu này?"></textarea>
+                        </div>
+                    </div>
+                    <div class="post-comment">
+                        <div>
+                            <div class="cmt-flex">
+                                <input id="name-viewer" style="border-radius: 5px; border: 1px solid rgb(211, 209, 209); text-indent: 10px;
+                            color: black;" type="text" placeholder="Tên của bạn?">
+                                <button id="comment-button" class="btn-cmt" onclick=" AddComment()">Bình luận</button>
+                            </div>
+
+                        </div>
+                        <div id="notie" class="alert alert-danger"
+                            style="width: 540px; margin: 20px 80px; display: none">
+                            <strong><i class="fa-solid fa-triangle-exclamation fa-lg"></i></strong> Bạn chưa nhập tên hoặc nội dung đánh giá
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <table id="comment-table" class="table-borderless">
+                        <tr style="border-bottom: 1px solid rgb(211, 209, 209); height: 5px;"><span style="font-weight: 600; font-size: 20px;">Bình luận</span></tr>
+                        <tr class="list-comment">
+                            <td>
+                                <div class="comment-title cmt-flex justify-content-space-beetween">
+                                    <div>
+                                        <img class="rounded-circle shadow-1-strong me-3"
+                                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp"
+                                            alt="avatar" width="30" height="30" />
+                                        <span class="commnet-name">
+                                            Yui Hanato
+                                        </span>
+                                    </div>
+                                    <span class="comment-time">20:01 12/01/2024</span>
+                                </div>
+                                <div class="commnet-old">
+                                    <p>
+                                        Tuyệt vời, tôi rất thích trận đấu này!
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="list-comment">
+                            <td>
+                                <div class="comment-title cmt-flex justify-content-space-beetween">
+                                    <div>
+                                        <img class="rounded-circle shadow-1-strong me-3"
+                                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp"
+                                            alt="avatar" width="30" height="30" />
+                                        <span class="commnet-name">
+                                            Emi Fukada
+                                        </span>
+                                    </div>
+                                    <span class="comment-time">03:22 14/01/2024</span>
+                                </div>
+                                <div class="commnet-old">
+                                    <p>
+                                        Đặt over 2.5 ai ngờ lại ăn, may thật!!!
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="list-comment">
+                            <td>
+                                <div class="comment-title cmt-flex justify-content-space-beetween">
+                                    <div>
+                                        <img class="rounded-circle shadow-1-strong me-3"
+                                            src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp"
+                                            alt="avatar" width="30" height="30" />
+                                        <span class="commnet-name">
+                                            Emi Fukada
+                                        </span>
+                                    </div>
+                                    <span class="comment-time">03:22 14/01/2024</span>
+                                </div>
+                                <div class="commnet-old">
+                                    <p>
+                                        Đặt over 2.5 ai ngờ lại ăn, may thật!!!
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
     <footer id="foot-content" class="bg-dark container-fluid">
         <div class="wrap container">
@@ -79,6 +455,9 @@
                         <a href="" class="link-contact">
                             <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
                         </a>
+                        <div style="color: #ffffff;"><span>Website cam kết tuân thủ tuyệt đối pháp luật Việt Nam</span></div>                     
+                        <div style="color: #ffffff;"><span>Số 333 Trần Phú - TP Lào Cai - Lào Cai</span></div>
+                        <div style="color: #ffffff;"><span>Đại diện: <a href="https://zalo.me/0392931333">Mr. Hiệp</a></span></div>
                     </div>
                 </div>
                 <div class="col">
@@ -88,6 +467,80 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function AddComment() {
+            let name = document.getElementById("name-viewer").value;
+            let comment = document.getElementById("comment-viewer").value;
+            let time = getCurrentDateTime();
+            if (name.trim() !== "" && comment.trim() !== "") {
+                document.getElementById("notie").style.display = "none";
+                console.log("Không rỗng");
+                let html = `
+            <tr class="list-comment">
+                <td>
+                    <div class="comment-title cmt-flex justify-content-space-beetween">
+                        <div>
+                            <img class="rounded-circle shadow-1-strong me-3"
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(19).webp"
+                                alt="avatar" width="30" height="30" />
+                            <span class="commnet-name">
+                                ${name}
+                            </span>
+                        </div>
+                        <span class="comment-time">`+ time + `</span>
+                    </div>
+                    <div class="commnet-old">
+                        <p>
+                            ${comment}
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        `;
+                document.getElementById("comment-table").insertAdjacentHTML('beforeend', html);
+                var existingHtmlArray = JSON.parse(localStorage.getItem('commentObjectArray')) || [];
+                var currentIndex = parseInt(localStorage.getItem('index')) || 0;
+                existingHtmlArray.push({
+                    name: name,
+                    comment: comment,
+                    timestamp: time,
+                    code: html
+                });
+                localStorage.setItem('commentObjectArray', JSON.stringify(existingHtmlArray));
+            } else {
+                document.getElementById("notie").style.display = "block";
+                console.log("Rỗng");
+            }
+        }
+        function getCurrentDateTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var day = now.getDate();
+            var month = now.getMonth() + 1;
+            var year = now.getFullYear();
+            hours = (hours < 10) ? "0" + hours : hours;
+            minutes = (minutes < 10) ? "0" + minutes : minutes;
+            var formattedDateTime = hours + ":" + minutes + "  " + day + "/" + month + "/" + year;
+
+            return formattedDateTime;
+        }
+
+        var currentDateTime = getCurrentDateTime();
+        console.log(currentDateTime);
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var storedHtmlArray = JSON.parse(localStorage.getItem("commentObjectArray")) || [];
+            if (storedHtmlArray.length > 0) {
+                var htmlToShow = storedHtmlArray.map((item) => item.code).join("");
+                document
+                    .getElementById("comment-table")
+                    .insertAdjacentHTML("beforeend", htmlToShow);
+            }
+        });
+
+    </script>
 </body>
 
 </html>
