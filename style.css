@@ -1,5 +1,5 @@
 * {
-    font-family: Arial;
+    font-family: 'Roboto';
     box-sizing: border-box;
     text-decoration: none !important;
     scroll-behavior: auto;
@@ -144,6 +144,10 @@ body {
     margin: 5px;
 }
 
+.item:hover {
+    background: #464646;
+}
+
 .item-header {
     display: block;
     text-align: center;
@@ -152,6 +156,12 @@ body {
 
 .team-logo-img {
     width: 50%;
+}
+
+@keyframes beat {
+    to {
+        transform: scale(1.1);
+    }
 }
 
 .team-name>h3 {
@@ -191,6 +201,8 @@ body {
     font-size: 11px;
     text-transform: uppercase;
     float: right;
+    animation: beat 0.65s infinite alternate;
+    transform-origin: center;
 }
 
 .result {
@@ -398,6 +410,8 @@ td {
     background-color: #ececec;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #fff;
 }
 
 .item-match-col {
@@ -424,7 +438,7 @@ td {
 }
 
 .item-match {
-    border-bottom: 0.5px solid #ffffff;
+    
 }
 
 .item-match-this-sm {
@@ -470,7 +484,7 @@ td {
 
 .item-match-this {
     margin-top: 1rem;
-   text-align: center;
+    text-align: center;
 }
 
 .fidel-text {
@@ -490,7 +504,6 @@ td {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: inherit;
 }
 
 .ticket-none {
@@ -504,12 +517,14 @@ td {
 #insert-btn {
     margin-top: 500px;
 }
+
 .wrap-gen {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     margin: 20px 0px;
 }
+
 marquee {
     font-style: italic;
     margin-top: 80px;
@@ -638,4 +653,100 @@ marquee {
 
 #name-viewer {
     margin-left: 75px;
+}
+#hot-news {
+    background-color: #fff;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-top: 30px;
+    margin-top: -40px;
+}
+#more-news {
+    background-color: #fff;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.body {
+    
+    margin-top: 100px;
+    font-family: 'Roboto-Bold';
+}
+
+.image-container {
+    position: relative;
+    width: 750px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    max-width: 740px;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9019607843137255) 0%, rgba(0, 0, 0, 0) 99%);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.img-news-list {
+    max-width: 150px;
+    height: 100px;
+}
+.news-list {
+    color: black;
+}
+.hover-p:hover {
+    color: #189c46;
+}
+.bot-border {
+   margin-bottom: 20px;
+}
+
+.news-content {
+    padding-bottom: 30px;
+}
+
+.text-h5 {
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+.text-h5:hover {
+    color: #189c46;
+}
+.text-p {
+    color: #676767;
+    font-size: 14px;
+}
+.content-col-8 {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 30px;
+}
+
+.text-title-news {
+    font-weight: bold;
+    color: #189c46;
+    text-transform: uppercase;
+}
+.text-p-bold {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0px 15px 0px 20px;
+    color: black;
+}
+.text-p-bold:hover {
+    color: #189c46;
+}
+.hightlight-flex {
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+.highlight-link {
+    padding: 10px 0px;
 }
